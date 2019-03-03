@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>프로토타입</title>
+	<style>
+		*{ border: 1px solid blue; }
+		.clear{ clear: both; }
+		.wrap{
+			width: 1100px;
+			margin: 0 auto;
+			background-color: #efefef; 
+		}
+		.header{
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			background-color: #ffffff; 
+		}
+		.upperForm .sns{
+			padding: 0;
+			margin: 0;
+			float: left;
+		}
+		.upperForm .sns li{
+			display: inline-block;
+			list-style: none;
+		}
+		.upperForm .loginLink{
+			padding: 0;
+			margin: 0;
+			float: right;
+		}
+		.upperForm .loginLink li{
+			display: inline-block;
+			list-style: none;
+		}
+		.upperForm .loginLink li a{
+			text-decoration: none;
+			color: #777777;
+			font-size: 11px;
+		}
+		#logo{
+		}
+		.divider{
+			color: #888888;
+		}
+		.nav{
+			display: inline-block;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			background-color: #444444;
+		}
+		.nav li{
+			display: inline-block;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 0;
+
+		}
+		.nav li a{
+			text-decoration: none;
+			color: #eeeeee;
+		}
+		.content{
+			display: inline-block;
+		}
+		.mainContent{
+			float: left;
+			width: 45%;
+			margin: 20px;
+			padding: 0;
+			/*display: inline-block;*/
+		}
+		.subContent{
+			float: right;
+			width: 45%;
+			margin: 20px;
+			padding: 0;
+			/*display: inline-block;*/
+		}
+		.footer{
+			color: #ffffff;
+			background-color: #000000;
+			font-size: 19px;
+			font-weight: bold;
+			text-align: center;
+			/*position: relative;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="upperForm">
+				<div>
+					<ul class="sns">
+						<li><a href="#"><img src="images/instagram.png"></a></li>
+						<li><a href="#"><img src="images/facebook.png"></a></li>
+					</ul>
+					<ul class="loginLink">
+						<li><a href="#">로그인</a></li><span class="divider"> |</span>
+						<li><a href="#">회원 가입</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="logo"><img src="images/test1.png"></div>
+			<ul class="nav">
+				<li><a href="#">Home</a></li><span class="divider">|</span>
+				<li><a href="#">Style</a>
+				<!-- 	<ul>
+						<li><a href="#">test1</a></li>
+						<li><a href="#">test2</a></li>
+						<li><a href="#">test3</a></li>
+					</ul> -->
+				</li><span class="divider">|</span>
+				<li><a href="#">Gallary</a></li><span class="divider">|</span>
+				<li><a href="#">Community</a></li>
+			</ul>
+			<div class="clean"></div>
+		</div> <!-- header 끝 -->
+		<div class="content">
+			<div class="mainContent">
+				<p>국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다.</p>
+
+				<p>대통령은 제3항과 제4항의 사유를 지체없이 공포하여야 한다. 사법권은 법관으로 구성된 법원에 속한다. 국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다.</p>
+				<div class="clean"></div>
+			</div> <!-- mainContent 끝 -->
+			<div class="subContent">
+				<img src="images/test2.jpg" style="width: 45%; height: 40%;">
+				<img src="images/test3.jpg" style="width: 45%; height: 40%;">
+				<img src="images/test3.jpg" style="width: 45%; height: 40%;">
+				<img src="images/test2.jpg" style="width: 45%; height: 40%;">
+				<div class="clean"></div>
+			</div><!-- subContent 끝 -->
+			<div class="clean"></div>
+		</div><!-- content 끝 -->
+		<div class="footer">
+			<span>2019-03-03</span>
+		</div>
+	</div>
+	
+</body>
+</html>
